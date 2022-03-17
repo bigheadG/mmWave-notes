@@ -2,5 +2,5 @@
 
 win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
 
-# mosquitto NAS install location:
+# mosquitto synoloy NAS installed location:
     /var/packages/mosquitto/
