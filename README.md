@@ -2,7 +2,7 @@
 
 win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
 
-# mosquitto synoloy NAS configure file location :
+# mosquitto configure file location(synoloy NAS) :
     $cd /volume1/@appstore/mosquitto/var/
     $ls
     mosquitto.conf
