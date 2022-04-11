@@ -41,4 +41,20 @@ win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
           204  deactivate
           # show prompt without (jb_py307) means no venv now
           pi@raspberrypi:~ $ 
-  
+
+# Create Geany project
+
+# ===== Create Geany project for python virtual enviroment =====
+# (step 01) Verify Geany setup
+#           on Geany selected /Edit/Preferences/General/Miscellaneous/Projects
+#           selected both of "Use project ..." and "Store project ..."  
+
+# (step 02) Create project name, for example: jb_g10 
+#           selected /Project/New for "/home/pi/jb_py307/jb_g10.geany" 
+#           for example: virtual env name is "jb_py307"
+#                        project name is "jb_g10"
+
+# (step 03) Set dedicated python.exe path, for example: based on venv 'jb_py307' 
+#           selected /Build/Set Build Commands/ 
+#           for example: on Compile field, filled /home/pi/jb_py307/bin/python3-m py_compile "%f"  
+#           for example: on Excute field,  filled /home/pi/jb_py307/bin/python3 "%f" 
