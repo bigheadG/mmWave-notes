@@ -66,3 +66,24 @@ win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
                 selected /Build/Set Build Commands/ 
                 for example: on Compile field, filled /home/pi/jb_py307/bin/python3-m py_compile "%f"  
                 for example: on Excute field,  filled /home/pi/jb_py307/bin/python3 "%f" 
+
+# Run RPi Z2W program on startup
+
+    # (step 01) Added startup file: '/home/pi/.config/autostart/jb_g10_startup.desktop' 
+        file content:
+        [Desktop Entry]
+        Type=Application
+        Name=jb_g10_startup_name
+        Exec=xterm -hold -sb -e 
+             'sudo chmod 777 /dev/ttyS*; 
+             ls -l /dev/ttyS*; 
+             cd /home/pi/Desktop/G01Parking/G10Parking-main; 
+             /home/pi/jb_py307/bin/python3 /home/pi/Desktop/G01Parking/G10Parking-main/jb_g10_startup.py'
+        
+        # ALERT: above 'Exec' command line just for easy reading purpose should not be inserted 'new line'
+        # Here 'jb_py307' is venv folder, means based on python 3.07
+        
+        # Refer: https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all#method-2-autostart     
+    
+    # (step 02) Working app: '/home/pi/Desktop/G01Parking/G10Parking-main/jb_g10_startup.py'
+    
