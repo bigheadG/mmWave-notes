@@ -83,4 +83,21 @@ win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
         # Refer: https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all#method-2-autostart     
     
     # (step 02) Working app: '/home/pi/Desktop/G01Parking/G10Parking-main/jb_g10_startup.py'
-    
+   
+   
+   
+ ## calculate doppler to speed or Hz
+
+         Calculate the radial velocity of an automobile based on the Doppler shift of a continuous-wave radar. 
+         The radar carrier frequency is 61.25 GHz.  
+            
+            doppler convert to Hz
+            # fd = -2V/λ  where λ = c/f
+            # fd = -2 * c/f * V = -2 * Doppler/(3 * 1e8 / 61.25 * 1e9 ) 
+            # ex: fd(Hz) = -2 * Doppler/ 0.00489796  
+            #            = -408.3632 * Doppler
+            #
+            
+            Doppler unit: m/sec
+            convert to km/hr 
+            speed(km/hr) = doppler * (1000/3600)
