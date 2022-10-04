@@ -101,3 +101,7 @@ win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
             Doppler unit: m/sec
             convert to km/hr 
             speed(km/hr) = doppler * (1000/3600)
+            
+ ## Antenna Array of Two Isotropic Point Sources in Same Phase
+    
+    https://www.youtube.com/watch?v=cuch5ZmyyvI&t=73s
