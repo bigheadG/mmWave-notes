@@ -105,3 +105,32 @@ win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
  ## Antenna Array of Two Isotropic Point Sources in Same Phase
     
     https://www.youtube.com/watch?v=cuch5ZmyyvI&t=73s
+
+
+## GLMeshItem plot
+
+        w3 = gl.GLViewWidget()
+        w3.setWindowTitle('(w3) v1020 xy pointCloud(sp1) / JB_v7 Object(sp3)')
+        w3.show()
+        
+        
+        def radarBoxVertexes(height = None):
+            verX = 0.0625
+            verY = 0.05
+            verZ = 0.125
+            zOffSet = height
+            verts = np.empty((2,3,3))
+            verts[0,0,:] = [-verX, 0, verZ + zOffSet]
+            verts[0,1,:] = [-verX, 0,-verZ + zOffSet]
+            verts[0,2,:] = [verX,  0,-verZ + zOffSet]
+            verts[1,0,:] = [-verX, 0, verZ + zOffSet]
+            verts[1,1,:] = [verX,  0, verZ + zOffSet]
+            verts[1,2,:] = [verX,  0, -verZ + zOffSet]
+            return verts
+
+        evmBox = gl.GLMeshItem(vertexes=radarBoxVertexes(height = install_height) ,smooth=False,drawEdges=True,edgeColor=pg.glColor('r'),drawFaces=False)
+
+        w3.addItem(evmBox)
+
+        update:
+        evmBox.setMeshData(vertexes=radarBoxVertexes(height=JB_RADAR_INSTALL_HEIGHT),smooth=False,drawEdges=True,edgeColor=pg.glColor('r'),drawFaces=False)
