@@ -138,3 +138,7 @@ win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
 ## mmWave Radar Sensors: Object Versus Range application notes:
 
     https://www.ti.com/lit/an/swra593a/swra593a.pdf?ts=1683599374296&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252Fzh-tw%252FAWR6843
+
+## Programming Chirp Parameters in TI Radar Devices
+
+    https://www.ti.com/lit/an/swra553a/swra553a.pdf?ts=1683516726047
