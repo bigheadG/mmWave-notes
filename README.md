@@ -134,3 +134,7 @@ win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
 
         update:
         evmBox.setMeshData(vertexes=radarBoxVertexes(height=JB_RADAR_INSTALL_HEIGHT),smooth=False,drawEdges=True,edgeColor=pg.glColor('r'),drawFaces=False)
+
+## mmWave Radar Sensors: Object Versus Range application notes:
+
+    https://www.ti.com/lit/an/swra593a/swra593a.pdf?ts=1683599374296&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252Fzh-tw%252FAWR6843
