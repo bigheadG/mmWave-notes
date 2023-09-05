@@ -135,6 +135,17 @@ win = pg.GraphicsLayoutWidget(show=True) # pg.GraphicsWindow() deprecated
         update:
         evmBox.setMeshData(vertexes=radarBoxVertexes(height=JB_RADAR_INSTALL_HEIGHT),smooth=False,drawEdges=True,edgeColor=pg.glColor('r'),drawFaces=False)
 
+##  Mac installation:
+    pip3 install mmWave
+    pip3 install numpy
+    pip3 install scikit-learn
+    pip3 install pySerial
+    pip3 install pandas
+    pip3 install pyqtgraph
+    pip3 install pyopengl
+    pip3 install opencv-python
+
+
 ## mmWave Radar Sensors: Object Versus Range application notes:
 
 https://www.ti.com/lit/an/swra593a/swra593a.pdf?ts=1683599374296&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252Fzh-tw%252FAWR6843
